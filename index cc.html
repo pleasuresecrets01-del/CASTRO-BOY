@@ -1,0 +1,930 @@
+<Index.html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Access exclusive content">
+    <title>Hot Vibes</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: #e0e0e0;
+            font-family: 'Space Grotesk', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .header-banner {
+            background-color: #1a0000;
+            color: #ff3333;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.8em;
+            font-weight: bold;
+            border-bottom: 3px solid #ff0000;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px #ff0000;
+        }
+
+        .section-title {
+            background: linear-gradient(135deg, #ff0000, #990000);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.8em;
+            font-weight: bold;
+            margin: 40px 0 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+        }
+
+        .product-card, .content-section {
+            background-color: #1c1c1c;
+            border: 2px solid #ff3333;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+        }
+
+        .product-title {
+            background: linear-gradient(135deg, #ff0000, #990000);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .product-cover {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .video-preview {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-description {
+            padding: 25px;
+            font-size: 1.2em;
+            line-height: 1.7;
+            color: #dddddd;
+            text-align: center;
+        }
+
+        .product-description ul {
+            padding-left: 20px;
+            list-style: none;
+            text-align: left;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .product-description li {
+            margin: 12px 0;
+            padding-left: 10px;
+        }
+
+        .product-description li:before {
+            content: "✔ ";
+            color: #ff3333;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .product-description p {
+            margin: 15px 0;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .buy-normal {
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            margin: 20px auto 30px;
+            padding: 15px;
+            background: linear-gradient(135deg, #ff0000, #cc0000);
+            color: white;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+            transition: all 0.3s;
+        }
+
+        .buy-normal:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+        }
+
+        .vip-group-card {
+            background: linear-gradient(135deg, #1a0000, #330000);
+            border: 4px solid #ff0066;
+            border-radius: 20px;
+            overflow: hidden;
+            margin: 50px auto;
+            max-width: 95%;
+            box-shadow: 0 0 40px rgba(255, 0, 102, 0.6);
+            position: relative;
+        }
+
+        .vip-group-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(255,0,102,0.1) 50%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .vip-title {
+            background: linear-gradient(135deg, #ff0066, #cc0044);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2.2em;
+            font-weight: bold;
+            margin: 0;
+            text-shadow: 0 0 15px #ff0066;
+        }
+
+        .vip-title i {
+            margin-right: 10px;
+        }
+
+        .buy-now-button {
+            display: block;
+            width: 85%;
+            max-width: 350px;
+            margin: 30px auto;
+            padding: 18px;
+            background: linear-gradient(135deg, #ff0066, #cc0044);
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255, 0, 102, 0.8);
+            transition: all 0.3s;
+        }
+
+        .buy-now-button:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 35px rgba(255, 0, 102, 1);
+        }
+
+        .footer {
+            background-color: #1a0000;
+            color: #888;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .telegram-button {
+            display: inline-block;
+            background: #ff3333;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .age-warning {
+            color: #ff4444;
+            font-weight: bold;
+        }
+
+        .loading-screen {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.6s;
+        }
+
+        .loading-screen img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- AVISO +18 INICIAL - Combina com o tema escuro/vermelho -->
+<div id="age-verification-overlay">
+    <div class="age-warning-content">
+        <div class="warning-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <h1>ADULTS ONLY</h1>
+        <div class="subtitle">18+ EXPLICIT CONTENT</div>
+        <p>This website contains explicit adult material.<br>
+        You must be <strong>18 years or older</strong> to enter.</p>
+        <p>By continuing, you confirm that you are of legal age<br>
+        and agree to view adult content.</p>
+        <div class="countdown">
+            Entering in <span id="countdown-timer">5</span> seconds...
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Aviso +18 - Design bonito e integrado ao tema do site */
+    #age-verification-overlay {
+        position: fixed;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(135deg, #000000, #1a0000);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .age-warning-content {
+        max-width: 800px;
+        padding: 40px;
+        background: rgba(20, 0, 0, 0.7);
+        border: 3px solid #ff3333;
+        border-radius: 20px;
+        box-shadow: 0 0 40px rgba(255, 51, 51, 0.6);
+        animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+        from { box-shadow: 0 0 20px rgba(255, 51, 51, 0.4); }
+        to { box-shadow: 0 0 50px rgba(255, 51, 51, 0.8); }
+    }
+
+    .warning-icon {
+        font-size: 7em;
+        color: #ff4444;
+        margin-bottom: 20px;
+        animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+
+    #age-verification-overlay h1 {
+        font-size: 4em;
+        color: #ff3333;
+        margin: 0 0 10px 0;
+        text-shadow: 0 0 20px #ff0000;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+    .subtitle {
+        font-size: 1.8em;
+        color: #ff6666;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    #age-verification-overlay p {
+        font-size: 1.5em;
+        color: #e0e0e0;
+        margin: 20px 0;
+        line-height: 1.6;
+    }
+
+    #age-verification-overlay p strong {
+        color: #ff3333;
+    }
+
+    .countdown {
+        margin-top: 40px;
+        font-size: 1.6em;
+        color: #ff6666;
+        font-weight: bold;
+    }
+
+    #countdown-timer {
+        font-size: 2em;
+        color: #ff0000;
+        text-shadow: 0 0 15px #ff0000;
+    }
+</style>
+
+<script>
+    // Contador regressivo de 5 segundos
+    let timeLeft = 5;
+    const timerElement = document.getElementById('countdown-timer');
+
+    const countdown = setInterval(() => {
+        timeLeft--;
+        timerElement.textContent = timeLeft;
+
+        if (timeLeft <= 0) {
+            clearInterval(countdown);
+            // Fade out suave do aviso
+            document.getElementById('age-verification-overlay').style.opacity = '0';
+            setTimeout(() => {
+                document.getElementById('age-verification-overlay').style.display = 'none';
+                // Se tiveres loading screen, podes escondê-lo aqui também
+            }, 800);
+        }
+    }, 1000);
+
+    // Fade out inicial suave
+    document.getElementById('age-verification-overlay').style.transition = 'opacity 0.8s';
+</script>
+
+    <div class="header-banner">
+        NEW CP FOLDERS AVAILABLE NOW!
+    </div>
+
+    <div class="container">
+
+        <!-- 🔥 CP COLLECTIONS 🔥 -->
+        
+
+        <!-- CP1 -->
+        <div class="product-card content-section">
+            <h2 class="product-title">CP1</h2>
+            <img src="assets/img/Imagem-cp1.jpg" alt="CP1" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-cp1.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Cp1%20previa%201.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="product-description">
+                <p>CP1 AVAILABLE</p>
+                <ul>
+                    <li>Massive private collection</li>
+                    <li>Exclusive videos and photos</li>
+                    <li>Premium quality content</li>
+                    <li>Instant access</li>
+                </ul>
+            </div>
+            <div id="pacoteC1" data-nome="CP1" data-preco="35" data-descricao="Massive private collection,Exclusive videos and photos,Premium quality content,Instant access" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $35</a>
+        </div>
+
+        <!-- CP2 -->
+        <div class="product-card content-section">
+            <h2 class="product-title">CP2</h2>
+            <img src="assets/img/Imagem-cp2.jpg" alt="CP2" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-cp2.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Cp2%20previa%202.mp4   " type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>CP2 AVAILABLE</p>
+                <ul>
+                    <li>Huge exclusive pack</li>
+                    <li>Thousands of private files</li>
+                    <li>High quality media</li>
+                    <li>Instant delivery</li>
+                </ul>
+            </div>
+            <div id="pacoteC2" data-nome="CP2" data-preco="40" data-descricao="Huge exclusive pack,Thousands of private files,High quality media,Instant delivery" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $40</a>
+        </div>
+
+        <!-- CP3 -->
+        <div class="product-card content-section">
+            <h2 class="product-title">CP3</h2>
+            <img src="assets/img/Imagem-cp3.jpg" alt="CP3" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-cp3.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Cp3%20previa%201.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>CP3 AVAILABLE</p>
+                <ul>
+                    <li>Premium private collection</li>
+                    <li>Exclusive content only</li>
+                    <li>Full high quality pack</li>
+                    <li>Instant access</li>
+                </ul>
+            </div>
+            <div id="pacoteC3" data-nome="CP3" data-preco="40" data-descricao="Premium private collection,Exclusive content only,Full high quality pack,Instant access" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $40</a>
+        </div>
+
+        <!-- CP4 -->
+        <div class="product-card content-section">
+            <h2 class="product-title">CP4</h2>
+            <img src="assets/img/Imagem-cp4.jpg" alt="CP4" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-cp4.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Cp4%20previa%201.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>CP4 AVAILABLE</p>
+                <ul>
+                    <li>Complete exclusive folder</li>
+                    <li>Premium leaked content</li>
+                    <li>High resolution media</li>
+                    <li>Instant delivery</li>
+                </ul>
+            </div>
+            <div id="pacoteC4" data-nome="CP4" data-preco="45" data-descricao="Complete exclusive folder,Premium leaked content,High resolution media,Instant delivery" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $45</a>
+        </div>
+
+        <!-- CP FULL -->
+        <div class="product-card content-section">
+            <h2 class="product-title">CP FULL</h2>
+            <img src="assets/img/Imagem-allcp.jpg" alt="CP Full" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-allcp.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Cp5%20previa%201.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>CP FULL AVAILABLE</p>
+                <ul>
+                    <li>1744 VIDEOS</li>
+                    <li>22.5GB IN TOTAL</li>
+                    <li>MY COMPLETE FOLDER</li>
+                    <li>PREMIUM CONTENT</li>
+                </ul>
+            </div>
+            <div id="pacoteC5" data-nome="CP FULL" data-preco="85" data-descricao="1744 VIDEOS,22.5GB IN TOTAL,MY COMPLETE FOLDER,PREMIUM CONTENT" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $85</a>
+        </div>
+
+        <!-- BLACKMAIL -->
+        <div class="product-card content-section">
+            <h2 class="product-title">BLACKMAIL</h2>
+            <img src="assets/img/Imagem-12.jpg" alt="Blackmail" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-12.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Black%20previa%201.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>BLACKMAIL PACK AVAILABLE</p>
+                <ul>
+                    <li>Special blackmail collection</li>
+                    <li>Exclusive leaked content</li>
+                    <li>Private videos and photos</li>
+                    <li>Instant delivery</li>
+                </ul>
+            </div>
+            <div id="pacoteBlackmail" data-nome="BLACKMAIL" data-preco="65" data-descricao="Special blackmail collection,Exclusive leaked content,Private videos and photos,Instant delivery" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $65</a>
+        </div>
+
+        <!-- SNAPGOD -->
+        <div class="product-card content-section">
+            <h2 class="product-title">SNAPGOD</h2>
+            <img src="assets/img/Imagem-11.jpg" alt="Snapgod" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-11.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Snap%20God%20previa%201.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>SNAPGOD COLLECTION AVAILABLE</p>
+                <ul>
+                    <li>Mega Snapchat leaks</li>
+                    <li>Thousands of private snaps</li>
+                    <li>Premium exclusive content</li>
+                    <li>Instant access</li>
+                </ul>
+            </div>
+            <div id="pacoteSnapgod" data-nome="SNAPGOD" data-preco="65" data-descricao="Mega Snapchat leaks,Thousands of private snaps,Premium exclusive content,Instant access" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $65</a>
+        </div>
+
+        <!-- MOM AND SON -->
+        <div class="product-card content-section">
+            <h2 class="product-title">MOM AND SON</h2>
+            <img src="assets/img/Imagem-16.jpg" alt="Mom and Son" class="product-cover">
+            <video class="video-preview" controls poster="https://pub-c1ed1959681d424888eec82335822498.r2.dev/MOM%20previa%203.mp4">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/MOM%20previa%203.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>MOM AND SON PACK AVAILABLE</p>
+                <ul>
+                    <li>Full collection</li>
+                    <li>Exclusive taboo content</li>
+                    <li>High quality videos</li>
+                    <li>Instant delivery</li>
+                </ul>
+            </div>
+            <div id="pacoteMomAndSon" data-nome="MOM AND SON" data-preco="50" data-descricao="Full collection,Exclusive taboo content,High quality videos,Instant delivery" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $50</a>
+        </div>
+
+        <!-- 🔥 TEEN LEAKED PACKS 🔥 -->
+       
+
+        <div class="product-card content-section">
+            <h2 class="product-title">IVANKA</h2>
+            <img src="assets/img/Imagem-1.jpg" alt="Ivanka" class="product-cover">
+            <video class="video-preview" controls poster="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Ivanka%20previa%201.mp4">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Ivanka%20previa%201.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>IVANKA AVAILABLE</p>
+                <ul>
+                    <li>High quality leaked videos and photos</li>
+                    <li>Full private collection</li>
+                    <li>Exclusive content</li>
+                    <li>Instant access after purchase</li>
+                </ul>
+            </div>
+            <div id="pacoteIvanka" data-nome="IVANKA" data-preco="35" data-descricao="High quality leaked videos and photos,Full private collection,Exclusive content,Instant access" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $35</a>
+        </div>
+
+        <div class="product-card content-section">
+            <h2 class="product-title">IZZY</h2>
+            <img src="assets/img/Imagem-2.jpg" alt="Izzy" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-2.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Izzy%20previa%201.mp44" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>IZZY AVAILABLE</p>
+                <ul>
+                    <li>Full premium leaked pack</li>
+                    <li>Hundreds of exclusive photos and videos</li>
+                    <li>Private content only</li>
+                    <li>Instant delivery</li>
+                </ul>
+            </div>
+            <div id="pacoteIzzy" data-nome="IZZY" data-preco="30" data-descricao="Full premium leaked pack,Hundreds of exclusive photos and videos,Private content only,Instant delivery" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $30</a>
+        </div>
+
+        <div class="product-card content-section">
+            <h2 class="product-title">DESIRE GARCIA</h2>
+            <img src="assets/img/Imagem-3.jpg" alt="Desire Garcia" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-3.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Desire%20previa%201.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>DESIRE GARCIA AVAILABLE</p>
+                <ul>
+                    <li>Complete leaked collection</li>
+                    <li>High quality videos and photos</li>
+                    <li>Exclusive private content</li>
+                    <li>Instant access</li>
+                </ul>
+            </div>
+            <div id="pacoteDesireGarcia" data-nome="DESIRE GARCIA" data-preco="40" data-descricao="Complete leaked collection,High quality videos and photos,Exclusive private content,Instant access" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $40</a>
+        </div>
+
+        <div class="product-card content-section">
+            <h2 class="product-title">LIZZY</h2>
+            <img src="assets/img/Imagem-4.jpg" alt="Lizzy" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-4.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Lizzy%20previa%202.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>LIZZY AVAILABLE</p>
+                <ul>
+                    <li>Full private folder</li>
+                    <li>Premium leaked content</li>
+                    <li>Exclusive videos and photos</li>
+                    <li>Instant delivery</li>
+                </ul>
+            </div>
+            <div id="pacoteLizzyFolder" data-nome="LIZZY" data-preco="45" data-descricao="Full private folder,Premium leaked content,Exclusive videos and photos,Instant delivery" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $45</a>
+        </div>
+
+        <div class="product-card content-section">
+            <h2 class="product-title">SAVANNAH</h2>
+            <img src="assets/img/Imagem-5.jpg" alt="Savannah" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-5.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Sanavannah%20previa%201.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>SAVANNAH AVAILABLE</p>
+                <ul>
+                    <li>Exclusive leaked pack</li>
+                    <li>High quality content</li>
+                    <li>Private collection</li>
+                    <li>Instant access</li>
+                </ul>
+            </div>
+            <div id="pacoteSavannah" data-nome="SAVANNAH" data-preco="40" data-descricao="Exclusive leaked pack,High quality content,Private collection,Instant access" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $40</a>
+        </div>
+
+        <div class="product-card content-section">
+            <h2 class="product-title">BLONDE GIRLS</h2>
+            <img src="assets/img/Imagem-6.jpg" alt="Blonde Girls" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-6.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Blond%20previa%202.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>BLONDE GIRLS COLLECTION AVAILABLE</p>
+                <ul>
+                    <li>Mega pack of blonde girls</li>
+                    <li>Hundreds of leaked photos and videos</li>
+                    <li>Premium exclusive content</li>
+                    <li>Instant delivery</li>
+                </ul>
+            </div>
+            <div id="pacoteBlondeGirls" data-nome="BLONDE GIRLS" data-preco="45" data-descricao="Mega pack of blonde girls,Hundreds of leaked photos and videos,Premium exclusive content,Instant delivery" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $45</a>
+        </div>
+
+        <div class="product-card content-section">
+            <h2 class="product-title">BELLE DELPHINE</h2>
+            <img src="assets/img/Imagem-7.jpg" alt="Belle Delphine" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-7.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Belle%20previa%202.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>BELLE DELPHINE FULL PACK AVAILABLE</p>
+                <ul>
+                    <li>Complete private collection</li>
+                    <li>All leaked content</li>
+                    <li>Exclusive videos and photos</li>
+                    <li>Instant access</li>
+                </ul>
+            </div>
+            <div id="pacoteBelleDelphine" data-nome="BELLE DELPHINE" data-preco="50" data-descricao="Complete private collection,All leaked content,Exclusive videos and photos,Instant access" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $50</a>
+        </div>
+
+        <div class="product-card content-section">
+            <h2 class="product-title">JESS</h2>
+            <img src="assets/img/Imagem-8.jpg" alt="Jess" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-8.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Jess%20previa%202.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>JESS AVAILABLE</p>
+                <ul>
+                    <li>Full leaked collection</li>
+                    <li>Premium private content</li>
+                    <li>High quality videos</li>
+                    <li>Instant delivery</li>
+                </ul>
+            </div>
+            <div id="pacoteJess" data-nome="JESS" data-preco="45" data-descricao="Full leaked collection,Premium private content,High quality videos,Instant delivery" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $45</a>
+        </div>
+
+        <div class="product-card content-section">
+            <h2 class="product-title">AVA</h2>
+            <img src="assets/img/Imagem-9.jpg" alt="Ava" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-9.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Ava%20previa%202.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>AVA AVAILABLE</p>
+                <ul>
+                    <li>Exclusive private pack</li>
+                    <li>Leaked premium content</li>
+                    <li>Full collection</li>
+                    <li>Instant access</li>
+                </ul>
+            </div>
+            <div id="pacoteAva" data-nome="AVA" data-preco="55" data-descricao="Exclusive private pack,Leaked premium content,Full collection,Instant access" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $55</a>
+        </div>
+
+        <div class="product-card content-section">
+            <h2 class="product-title">ASH</h2>
+            <img src="assets/img/Imagem-10.jpg" alt="Ash" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-10.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Ash%20previa%202.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>ASH AVAILABLE</p>
+                <ul>
+                    <li>Complete leaked folder</li>
+                    <li>Exclusive content</li>
+                    <li>High quality media</li>
+                    <li>Instant delivery</li>
+                </ul>
+            </div>
+            <div id="pacoteAsh" data-nome="ASH" data-preco="50" data-descricao="Complete leaked folder,Exclusive content,High quality media,Instant delivery" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $50</a>
+        </div>
+
+        <!-- 🔥 OTHER PREMIUM PACKS 🔥 -->
+        
+
+        <div class="product-card content-section">
+            <h2 class="product-title">BRAZZERS</h2>
+            <img src="assets/img/Imagem-13.jpg" alt="Brazzers" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-13.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Brazzer%20previa%202.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>BRAZZERS PREMIUM AVAILABLE</p>
+                <ul>
+                    <li>Full premium collection</li>
+                    <li>Thousands of videos</li>
+                    <li>High quality content</li>
+                    <li>Instant access</li>
+                </ul>
+            </div>
+            <div id="pacoteBrazzers" data-nome="BRAZZERS" data-preco="55" data-descricao="Full premium collection,Thousands of videos,High quality content,Instant access" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $55</a>
+        </div>
+
+        <div class="product-card content-section">
+            <h2 class="product-title">SNAPCHAT</h2>
+            <img src="assets/img/Imagem-14.jpg" alt="Snapchat" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-14.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Snap%20previa%202.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>SNAPCHAT MEGA PACK AVAILABLE</p>
+                <ul>
+                    <li>Huge Snapchat leaks</li>
+                    <li>Private stories and snaps</li>
+                    <li>Exclusive content</li>
+                    <li>Instant delivery</li>
+                </ul>
+            </div>
+            <div id="pacoteSnapchat" data-nome="SNAPCHAT" data-preco="65" data-descricao="Huge Snapchat leaks,Private stories and snaps,Exclusive content,Instant delivery" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $65</a>
+        </div>
+
+        <div class="product-card content-section">
+            <h2 class="product-title">OMEGLE</h2>
+            <img src="assets/img/Imagem-15.jpg" alt="Omegle" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-15.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Omegle%20previa%203.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>OMEGLE COLLECTION AVAILABLE</p>
+                <ul>
+                    <li>Exclusive Omegle recordings</li>
+                    <li>Private chats and videos</li>
+                    <li>Premium content</li>
+                    <li>Instant access</li>
+                </ul>
+            </div>
+            <div id="pacoteOmegle" data-nome="OMEGLE" data-preco="45" data-descricao="Exclusive Omegle recordings,Private chats and videos,Premium content,Instant access" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $45</a>
+        </div>
+
+        <div class="product-card content-section">
+            <h2 class="product-title">HIGHSCHOOL THOTS</h2>
+            <img src="assets/img/Imagem-17.jpg" alt="Highschool Thots" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-17.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/High%20Previa%201.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>HIGHSCHOOL THOTS COLLECTION AVAILABLE</p>
+                <ul>
+                    <li>Mega highschool pack</li>
+                    <li>Leaked private content</li>
+                    <li>Exclusive photos and videos</li>
+                    <li>Instant access</li>
+                </ul>
+            </div>
+            <div id="pacoteHighSchoolThots" data-nome="HIGHSCHOOL THOTS" data-preco="40" data-descricao="Mega highschool pack,Leaked private content,Exclusive photos and videos,Instant access" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $40</a>
+        </div>
+
+        <div class="product-card content-section">
+            <h2 class="product-title">DARK ZADIE</h2>
+            <img src="assets/img/Imagem-18.jpg" alt="Dark Zadie" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-18.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Dark%20previa%202.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>DARK ZADIE PACK AVAILABLE</p>
+                <ul>
+                    <li>Full private collection</li>
+                    <li>Exclusive leaked content</li>
+                    <li>Premium videos</li>
+                    <li>Instant delivery</li>
+                </ul>
+            </div>
+            <div id="pacoteDarkzadie" data-nome="DARK ZADIE" data-preco="45" data-descricao="Full private collection,Exclusive leaked content,Premium videos,Instant delivery" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $45</a>
+        </div>
+
+        <div class="product-card content-section">
+            <h2 class="product-title">ANXIOUS PANDA</h2>
+            <img src="assets/img/Imagem-19.jpg" alt="Anxious Panda" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-19.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/Anxioux%20previa%202.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>ANXIOUS PANDA FULL PACK AVAILABLE</p>
+                <ul>
+                    <li>Complete collection</li>
+                    <li>All private content</li>
+                    <li>Exclusive leaks</li>
+                    <li>Instant access</li>
+                </ul>
+            </div>
+            <div id="pacoteAnxiousPanda" data-nome="ANXIOUS PANDA" data-preco="50" data-descricao="Complete collection,All private content,Exclusive leaks,Instant access" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $50</a>
+        </div>
+
+        <div class="product-card content-section">
+            <h2 class="product-title">NEW STUFF PYT</h2>
+            <img src="assets/img/Imagem-20.jpg" alt="New Stuff PYT" class="product-cover">
+            <video class="video-preview" controls poster="assets/img/Imagem-20.jpg">
+                <source src="https://pub-c1ed1959681d424888eec82335822498.r2.dev/New%20previa%202.mp4" type="video/mp4">
+            </video>
+            <div class="product-description">
+                <p>NEW STUFF PYT AVAILABLE</p>
+                <ul>
+                    <li>Latest fresh content</li>
+                    <li>Brand new leaks</li>
+                    <li>Premium quality</li>
+                    <li>Instant delivery</li>
+                </ul>
+            </div>
+            <div id="pacoteNewStuffPyt" data-nome="NEW STUFF PYT" data-preco="55" data-descricao="Latest fresh content,Brand new leaks,Premium quality,Instant delivery" data-buy-link=""></div>
+            <a href="#" class="buy-normal">BUY NOW - $55</a>
+        </div>
+
+        <!-- 💎 PREMIUM OFFER - VIP GROUP (final) 💎 -->
+        <h2 class="section-title">💎 PREMIUM OFFER 💎</h2>
+
+        <div class="vip-group-card content-section">
+            <h2 class="vip-title">
+                <i class="fas fa-crown"></i> VIP GROUP LIFETIME ACCESS <i class="fas fa-crown"></i>
+            </h2>
+
+            <img src="assets/img/vip-cover.jpg" alt="VIP Group Cover" class="product-cover">
+
+            <video class="video-preview" controls poster="assets/img/vip-cover.jpg">
+                <source src="assets/video/vslvip.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="product-description">
+                <p>VIP GROUP LIFETIME AVAILABLE</p>
+                <ul>
+                    <li>Lifetime access to private VIP group</li>
+                    <li>New exclusive content every day</li>
+                    <li>Private Telegram channels (no ban risk)</li>
+                    <li>Permanent mega links + constant updates</li>
+                    <li>24/7 priority support</li>
+                    <li>No monthly payments – one time fee</li>
+                    <li>Over 10,000 happy members</li>
+                </ul>
+                <p>Join the elite and get unlimited premium content forever!</p>
+            </div>
+
+            <div id="pacoteVipGroup" 
+                 data-nome="VIP GROUP LIFETIME ACCESS" 
+                 data-preco="50" 
+                 data-descricao="Lifetime VIP group access,Daily exclusive content,Permanent mega links,24/7 support,No monthly payments"
+                 data-buy-link="https://t.me/yudmila1?text=Hello!%20I%20would%20like%20to%20buy%0A%0AContent:%20Access%20to%20the%20VIP%20group%20of%20Cp.%20Buy%20Teens%20and%20all%20other%20leaked%20content%0ADescription:%0AExclusive%20high%20quality%20content%20%E2%80%A2%20Lifetime%20access%20%E2%80%A2%20Instant%20delivery">
+            </div>
+
+            <a href="#" class="buy-normal">GET LIFETIME VIP ACCESS - $50</a>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <a href="https://t.me/yudmila1" class="telegram-button" target="_blank">
+            <i class="fa-brands fa-telegram"></i> CONTACT VIA TELEGRAM
+        </a>
+        <p class="age-warning">Exclusive content for adults 18+</p>
+        <p>© 2025 HotVibes-Privacy. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/optimization.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script2.js"></script>
+
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.querySelector('.loading-screen').style.opacity = '0';
+                setTimeout(function() {
+                    document.querySelector('.loading-screen').style.display = 'none';
+                }, 600);
+            }, 2000);
+        });
+    </script>
+
+</body>
+</html>
